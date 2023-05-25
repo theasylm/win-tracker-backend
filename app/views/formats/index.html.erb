@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Formats</h1>
+
+<div id="formats">
+  <% @formats.each do |format| %>
+    <%= render format %>
+    <p>
+      <%= link_to "Show this format", format %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New format", new_format_path %>

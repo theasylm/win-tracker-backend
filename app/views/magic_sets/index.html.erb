@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Magic sets</h1>
+
+<div id="magic_sets">
+  <% @magic_sets.each do |magic_set| %>
+    <%= render magic_set %>
+    <p>
+      <%= link_to "Show this magic set", magic_set %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New magic set", new_magic_set_path %>

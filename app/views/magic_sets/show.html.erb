@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @magic_set %>
+
+<div>
+  <%= link_to "Edit this magic set", edit_magic_set_path(@magic_set) %> |
+  <%= link_to "Back to magic sets", magic_sets_path %>
+
+  <%= button_to "Destroy this magic set", @magic_set, method: :delete %>
+</div>

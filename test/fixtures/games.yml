@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  format: one
+  set: one
+  player: one
+  opponent: one
+  commander: one
+  opposing_commander: one
+  mulls: 1
+  opponentMulls: 1
+  win: false
+  first: false
+  deck: one
+  notes: MyString
+
+two:
+  format: two
+  set: two
+  player: two
+  opponent: two
+  commander: two
+  opposing_commander: two
+  mulls: 1
+  opponentMulls: 1
+  win: false
+  first: false
+  deck: two
+  notes: MyString

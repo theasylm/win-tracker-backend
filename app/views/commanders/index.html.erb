@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Commanders</h1>
+
+<div id="commanders">
+  <% @commanders.each do |commander| %>
+    <%= render commander %>
+    <p>
+      <%= link_to "Show this commander", commander %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New commander", new_commander_path %>

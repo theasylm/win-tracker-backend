@@ -1,0 +1,77 @@
+<%= form_with(model: game) do |form| %>
+  <% if game.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+        <% game.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :format_id, style: "display: block" %>
+    <%= form.text_field :format_id %>
+  </div>
+
+  <div>
+    <%= form.label :set_id, style: "display: block" %>
+    <%= form.text_field :magic_set_id %>
+  </div>
+
+  <div>
+    <%= form.label :player_id, style: "display: block" %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div>
+    <%= form.label :opponent_id, style: "display: block" %>
+    <%= form.text_field :opponent_id %>
+  </div>
+
+  <div>
+    <%= form.label :commander_id, style: "display: block" %>
+    <%= form.text_field :commander_id %>
+  </div>
+
+  <div>
+    <%= form.label :opposing_commander_id, style: "display: block" %>
+    <%= form.text_field :opposing_commander_id %>
+  </div>
+
+  <div>
+    <%= form.label :mulls, style: "display: block" %>
+    <%= form.number_field :mulls %>
+  </div>
+
+  <div>
+    <%= form.label :opponentMulls, style: "display: block" %>
+    <%= form.number_field :opponent_mulls %>
+  </div>
+
+  <div>
+    <%= form.label :win, style: "display: block" %>
+    <%= form.check_box :win %>
+  </div>
+
+  <div>
+    <%= form.label :first, style: "display: block" %>
+    <%= form.check_box :first %>
+  </div>
+
+  <div>
+    <%= form.label :deck_id, style: "display: block" %>
+    <%= form.text_field :deck_id %>
+  </div>
+
+  <div>
+    <%= form.label :notes, style: "display: block" %>
+    <%= form.text_field :notes %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
